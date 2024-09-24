@@ -1,3 +1,10 @@
 h1 {
     color: red;
 }
+p {
+    color: green;
+}
+a {
+    color: inherit;
+}
+/* es ingerit es para formar que se herede el diseño del anterior */
