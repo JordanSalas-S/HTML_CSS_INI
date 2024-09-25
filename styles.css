@@ -1,10 +1,30 @@
+@font-face{
+    font-family: 'Montserrat';
+    src:url(/Fuentes/Montserrat-Italic-VariableFont_wght.ttf)
+
+}
+body {
+    background-color: #242424;
+}
+
 h1 {
-    color: red;
+    color: skyblue;
+    font-family: ;
+    font-weight: 300;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    letter-spacing: 10px;
+    word-spacing: 10px;
 }
+
 p {
-    color: green;
+    color: rgb(157, 189, 28);
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: 'Montserrat';
+
 }
-a {
-    color: inherit;
-}
-/* es ingerit es para formar que se herede el diseño del anterior */
