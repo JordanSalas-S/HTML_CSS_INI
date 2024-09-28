@@ -28,3 +28,101 @@ p {
     font-family: 'Montserrat';
 
 }
+/* div {
+    width: 400px;
+    height: 200px;
+    background-color: peru;
+    border: 2px;color: black;
+    padding: 20px;
+
+    margin: 0 auto;
+
+} */
+/*  box-sizing: border-box  sirve para no tomar en cuenta el border ni padding*/
+
+/* h2 {
+    width: 400px;
+    height: 200px;
+    background-color: peru;
+    padding: 10 5 10 20;
+    /* padding-top: 10;
+    padding-right: 15;
+    padding-bottom: 10;
+    padding-left: 20; 
+    es es to se maneja de manera horario*/
+
+/* div {
+    width: 400px;
+    height: 200px;
+    background-color: peru;
+    border: 2px;color: black;
+    margin: ;
+    margin: 0 auto;
+} */
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+/* COLAPSADO DE MARGENES VERTICALES , el mayor permanese*/
+/* em margin:o auto lo centra de manera horizontal */
+.skyblue {
+    background-color: skyblue;
+    margin-bottom: 150px;
+}
+
+.red {
+    background-color: red;
+    margin-top: 100px;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  background-color: #242424;
+  min-height: 500vh;
+}
+  */
+.relative {
+  border: 1px solid white;
+  color: white;
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 300px;
+}
+ 
+.absolute {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  right: -25px;
+  top: -25px;
+}
+ 
+.fixed {
+  width: 50px;
+  height: 50px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+ 
+    <div class="relative">       <div class... de Diego Alfonso Anibal Cueva Requena
+Diego Alfonso Anibal Cueva Requena
+22:23
+    <div class="relative">
+      <div class="absolute"></div>
+    </div>
+ 
+    <div class="fixed"></div>
+tiene menú contextual
+

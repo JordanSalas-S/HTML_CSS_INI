@@ -1,4 +1,4 @@
-# CSS
+# CSS 23-9-24
  
 - Hoja de estilos en cascada **(Cascading Style Sheets)**
 - Es un lenguaje para dar estilos a la web (1996)
@@ -178,4 +178,160 @@ h1{
   1) Explicar los conceptos con ejemplos
   2) (Agregar una nueva tipografia de google fonts, usando font-face)
 -->
+ ---
+
+ # SELECTORES 25-9-24
  
+- La manera de agarrar elemento o elementos del HTML para aplicar estilos
+ 
+## SELECTORES SIMPLES
+ 
+1. Selector de Etiqueta
+ 
+- Se aplica a elementos HTML especificos
+- Se le conoce como estilos base(general)
+ 
+```css
+h1 {
+  color: red;
+}
+ 
+span {
+  display: block;
+}
+```
+ 
+2. Selector de Clase
+ 
+- Es un atributo HTML que se indica con "class"
+- Es lo mas utilizado en CSS para aplicar estilos (recomendado)
+- Para el nombramiento de clases se utiliza nomenclatura( arquitectura )
+ 
+```html
+<h1 class="message">Selector de Clase</h1>
+```
+ 
+```css
+.message {
+  color: blue;
+}
+```
+ 
+3. Selector de ID
+ 
+- Es un atributo HTML que se indica con "id"
+- No se recomienda utilizarlo para CSS
+- No puede existir dos elementos html con el mismo "id"
+ 
+```html
+<main id="mainContent">Contenido principal</main>
+```
+ 
+```css
+#mainContent {
+  display: block;
+}
+```
+ 
+4. Selector Universal
+ 
+- No se recomienda utilizar mucho
+- Tiene un caso especifico
+ 
+```css
+* {
+  color: red;
+}
+```
+ 
+## SELECTORES COMPUESTOS
+ 
+1. Selector de Descendencia (Descendente)
+ 
+- Se aplica a un elemento que esta incluido en otro
+- No necesita ser hijo directo, puede estar niveles mas abajo
+ 
+```html
+<div class="padre">
+  <p>Hijo 1</p>
+  <p>Hijo 2</p>
+  <p>Hijo 3</p>
+</div>
+```
+ 
+2. Selector Hijo Directo
+ 
+- Selecciona al elemento o elementos que estan dentro y seguido de otro elemento
+ 
+```html
+<div class="padre">
+  <p>Hijo 1</p>
+  <p>Hijo 2</p>
+  <p>Hijo 3</p>
+</div>
+```
+ 
+```css
+.padre > .hijo {
+  color: red;
+}
+```
+ 
+3. Selector Anidado
+ 
+- Juntar selectores mediante comas
+- Se aplica a todos los selectores
+
+# BOX MODEL
+ 
+ 
+- Algoritmo que usa el navegador para dibujar elementos
+- Estos elementos tienen propiedades
+- Todos los elementos en la web son rectangulares
+- Propiedades importantes ( width - height )( ancho - alto )
+- Elementos bloque ( width - height )
+- Elementos inline ( width relativo - no tiene height)
+- Propiedad display
+- El box model se aplica solo a elementos de bloque
+ 
+```html
+<div>Soy un elemento</div>
+```
+ 
+## PARTES
+ 
+1. Content Box (AZUL)
+2. Padding Box (VERDE)
+3. Border Box (AMARILLO)
+ 
+4. Margin Box (NARANJA)
+tiene menú contextual
+# POSICIONAMIENTO
+ 
+- Con posicionamiento vamos a poder poner un elemento en cualquier lado que deseemos
+- Position va romper el flujo basico del DOM
+- Para que un elemento este posicionado (initial | relative | absolute | fixed | sticky)
+- Cuando un elemento esta posicionado , aprende nuevas propiedades
+<!--
+  top
+  right
+  bottom
+  left
+  z-index
+-->
+ 
+## RELATIVE
+ 
+- Un element posicionado de manera relative, mantiene sus dimensiones
+- La relacion de relative es para dar contexto a un posicionamiento absolute
+ 
+## ABSOLUTE
+ 
+- Un element posicionado de manera absolute,no mantiene sus dimensiones (salvo que las tenga definidas)
+- Su contexto es su ancestro posicionado mas cercano
+ 
+## FIXED
+ 
+- Pierde su espacio en el flujo
+ 
+tiene menú contextual
